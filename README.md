@@ -16,4 +16,5 @@
 Есть два стула:
 
 С логом в терминал build_terminal_log.sh
+
 С логом в файл build_file_log.sh
