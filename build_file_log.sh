@@ -33,7 +33,7 @@ fi
 function update_apt {
 echo -e "	Preparing\n"
 echo -e "	System update\n"
-#sudo apt-get update -y && sudo apt-get upgrade -y && sudo apt-get full-upgrade -y
+sudo apt-get update -y && sudo apt-get upgrade -y && sudo apt-get full-upgrade -y
 sleep 1.5
 }&>>$BUILD_LOG
 
@@ -57,7 +57,7 @@ echo -e "	Not found";echo "	Adding $source в $path\n";echo $source >> $path;
 fi
 }&>>$BUILD_LOG
 
-#--------------Установить нужные пакеты--------------#
+#--------------Install the required packages--------------#
 
 function install_apt {
 echo -e "	Installing the required packages\n"
@@ -66,14 +66,14 @@ sudo apt-get install ark bc bison build-essential clang curl flex g++-multilib g
 
 }&>>$BUILD_LOG
 
-#-------------Очистить ненужные пакеты-------------#
+#-------------Clear unnecessary packages-------------#
 
 function clear_apt {
 echo -e "\n	Cleaning\n"
 sudo apt-get clean -y && sudo apt-get autoremove -y
 }&>>$BUILD_LOG
 
-#-------------Переменные-------------#
+#-------------Variables-------------#
 
 function export_const {
 echo -e "\n	Setting architecture and compiler variables\n"
@@ -89,7 +89,7 @@ echo -e "	Subarchitecture: $SUBARCH"
 echo -e "	Compiler: $CROSS_COMPILE\n"
 }&>>$BUILD_LOG
 
-#-------------Подготовка-------------#
+#-------------Preparing-------------#
 
 function pre_install {
 echo -e "	Preparing the kernel source folder\n"
@@ -110,7 +110,7 @@ make -j$(nproc --all) O=../kernel-headers modules_install INSTALL_MOD_PATH=../ke
 make -j$(nproc --all) headers_install INSTALL_HDR_PATH=../kernel-headers
 }&>>$BUILD_LOG
 
-#------------Сборка-------------#
+#------------Build-------------#
 
 function build {
 echo -e "\n	Navigate to the adapter driver folder	\n"
