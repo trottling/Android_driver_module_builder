@@ -10,7 +10,7 @@ What is needed to work:
 + Linux
 + Internet
 + Kernel source code
-+ The right drivers source code
++ Drivers source code
 
 
  # How to use
@@ -33,15 +33,15 @@ https://github.com/trottling/Android_driver_module_builder -b rus
 4. open and edit for your needs:
 
 ```
-#-------------Значения переменных-------------#
+#-------------Variable values-------------#
 
 # Processor architecture (arm/arm64)
 CPU_ARCHITECTURE=arm64
 
-# Full path to the tolchain
+# Full path to the toolchain
 COMPILER=/home/xd/kernel_dev/18.1/gcc-linaro-7.5.0-2019.12-x86_64_aarch64-linux-gnu/bin/aarch64-linux-gnu-
 
-# Configure file located in arch/arm/configs or in arch/arm64/configs (depends on the architecture), e.g. lineage_s2_defconfig
+# Configure file located in arch/arm/configs or arch/arm64/configs (architecture dependent), e.g. lineage_s2_defconfig
 DEFCONFIG=lineage_s2_defconfig
 
 # Path to adapter drivers folder WITHOUT SPACE, e.g. /home/user/rtl8188eus
