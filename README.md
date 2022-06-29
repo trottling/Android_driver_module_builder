@@ -1,51 +1,54 @@
 Select your language in branch
 # Android driver module builder
-Автор: Я, с чем то помог SurvivalHorror
-Последняя доработка: ещё не было
+Author: Me, something SurvivalHorror helped with
+Last update: Hasn't been done yet
 
 
-# Скрипт собирает модулем драйвер wi-fi адаптера с нужным заголовком ядра
+# The script builds a wi-fi adapter driver module with the correct kernel header
 
-Что нужно для работы:
-+ Линукс
-+ Интернет
-+ Исходники ядра
-+ Исходники нужных драйверов
+What is needed to work:
++ Linux
++ Internet
++ Kernel source code
++ The right drivers source code
 
 
- # Как пользоваться
+ # How to use
  
-1. Качаем файлы
+1. Download the files
 ```
 https://github.com/trottling/Android_driver_module_builder -b rus
 ```
 
-2. Берем нужную нам версию
+2.
 
 ```
-    С логом в терминал build_terminal_log.sh
-    С логом в файл build_file_log.sh
+    With log into terminal build_terminal_log.sh
+    With log into build_file_log.sh
 ```
 
 
-3. Кидаем в папку с исходниками ядра
+3. Put it in the folder with the kernel sources
 
-4. Открываем и редактируем под себя:
+4. open and edit for your needs:
 
 ```
 #-------------Значения переменных-------------#
 
-# Архитектура процессора (arm/arm64)
+# Processor architecture (arm/arm64)
 CPU_ARCHITECTURE=arm64
 
-# Полный путь к тулчейну
+# Full path to the tolchain
 COMPILER=/home/xd/kernel_dev/18.1/gcc-linaro-7.5.0-2019.12-x86_64_aarch64-linux-gnu/bin/aarch64-linux-gnu-
 
-# Файл конфига, находится в arch/arm/configs или в arch/arm64/configs (зависит от архитектуры), например lineage_s2_defconfig
+# Configure file located in arch/arm/configs or in arch/arm64/configs (depends on the architecture), e.g. lineage_s2_defconfig
 DEFCONFIG=lineage_s2_defconfig
 
-# Путь до папки с драйверами адаптера БЕЗ_ПРОБЕЛОВ, например /home/user/rtl8188eus
+# Path to adapter drivers folder WITHOUT SPACE, e.g. /home/user/rtl8188eus
 ADAPTER_DRIVER_DIR=/home/xd/kernel_dev/18.1/rtl8188eus/
 ```
 
-5. Запускаем от имени рута и смотрим лог
+5. Run as root and see the log
+
+
+Translated with Deepl
