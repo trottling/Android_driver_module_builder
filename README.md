@@ -15,8 +15,9 @@
  # Как пользоваться
  
 1. Качаем файлы
+```
 https://github.com/trottling/Android_driver_module_builder -b rus
-
+```
 
 2. Берем нужную нам версию
 
