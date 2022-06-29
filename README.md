@@ -24,8 +24,8 @@ https://github.com/trottling/Android_driver_module_builder -b eng
 2.
 
 ```
-    With log into terminal build_terminal_log.sh
-    With log into build_file_log.sh
+    With log in terminal - build_terminal_log.sh
+    With log in file - build_file_log.sh
 ```
 
 
