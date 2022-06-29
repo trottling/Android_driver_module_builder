@@ -1,54 +1,51 @@
 Select your language in branch
 # Android driver module builder
-Author: Me, something SurvivalHorror helped with
-Last update: Hasn't been done yet
+Автор: Я, с чем то помог SurvivalHorror
+Последняя доработка: ещё не было
 
 
-# The script builds a wi-fi adapter driver module with the correct kernel header
+# Скрипт собирает модулем драйвер wi-fi адаптера с нужным заголовком ядра
 
-What is needed to work:
-+ Linux
-+ Internet
-+ Kernel source code
-+ Drivers source code
+Что нужно для работы:
++ Линукс
++ Интернет
++ Исходники ядра
++ Исходники нужных драйверов
 
 
- # How to use
+ # Как пользоваться
  
-1. Download the files
+1. Качаем файлы
 ```
 https://github.com/trottling/Android_driver_module_builder -b rus
 ```
 
-2.
+2. Берем нужную нам версию
 
 ```
-    With log into terminal build_terminal_log.sh
-    With log into build_file_log.sh
+    С логом в терминал build_terminal_log.sh
+    С логом в файл build_file_log.sh
 ```
 
 
-3. Put it in the folder with the kernel sources
+3. Кидаем в папку с исходниками ядра
 
-4. open and edit for your needs:
+4. Открываем и редактируем под себя:
 
 ```
-#-------------Variable values-------------#
+#-------------Значения переменных-------------#
 
-# Processor architecture (arm/arm64)
+# Архитектура процессора (arm/arm64)
 CPU_ARCHITECTURE=arm64
 
-# Full path to the toolchain
+# Полный путь к тулчейну
 COMPILER=/home/xd/kernel_dev/18.1/gcc-linaro-7.5.0-2019.12-x86_64_aarch64-linux-gnu/bin/aarch64-linux-gnu-
 
-# Configure file located in arch/arm/configs or arch/arm64/configs (architecture dependent), e.g. lineage_s2_defconfig
+# Файл конфига, находится в arch/arm/configs или в arch/arm64/configs (зависит от архитектуры), например lineage_s2_defconfig
 DEFCONFIG=lineage_s2_defconfig
 
-# Path to adapter drivers folder WITHOUT SPACE, e.g. /home/user/rtl8188eus
+# Путь до папки с драйверами адаптера БЕЗ_ПРОБЕЛОВ, например /home/user/rtl8188eus
 ADAPTER_DRIVER_DIR=/home/xd/kernel_dev/18.1/rtl8188eus/
 ```
 
-5. Run as root and see the log
-
-
-Translated with Deepl
+5. Запускаем от имени рута и смотрим лог
