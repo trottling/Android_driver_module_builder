@@ -19,17 +19,18 @@ https://github.com/trottling/Android_driver_module_builder -b rus
 
 
 2. Берем нужную нам версию
- # 
 
+```
     С логом в терминал build_terminal_log.sh
     С логом в файл build_file_log.sh
-
+```
 
 
 3. Кидаем в папку с исходниками ядра
 
 4. Открываем и редактируем под себя:
- # 
+
+```
 #-------------Значения переменных-------------#
 
 # Архитектура процессора (arm/arm64)
@@ -43,6 +44,6 @@ DEFCONFIG=lineage_s2_defconfig
 
 # Путь до папки с драйверами адаптера БЕЗ_ПРОБЕЛОВ, например /home/user/rtl8188eus
 ADAPTER_DRIVER_DIR=/home/xd/kernel_dev/18.1/rtl8188eus/
-
+```
 
 5. Запускаем от имени рута и смотрим лог
