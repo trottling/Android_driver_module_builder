@@ -18,7 +18,7 @@ What is needed to work:
  
 1. Download the files
 ```
-https://github.com/trottling/Android_driver_module_builder -b rus
+https://github.com/trottling/Android_driver_module_builder -b eng
 ```
 
 2.
