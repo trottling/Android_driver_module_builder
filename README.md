@@ -1,26 +1,17 @@
-# Android_driver_module_builder
-Автор: Я, с чем то помог SurvivalHorror
-Последняя доработка: ещё не было
+Android_driver_module_builder
 
+Author: Me, something SurvivalHorror helped with Last revision: Not yet
 
-Скрипт собирает модулем драйвер чего угодно с заголовком ядра исходного кода 
+The script builds a driver module of anything with a source kernel header
 
++ What we need
++ Linux
++ Internet
++ Kernel sources of the phone, and necessary drivers
 
-+ Что нам нужно
-+ Линукс
-+ Интернет
-+ Исходники ядра телефона, и нужных драйверов
+How to use Download necessary file, drop it in a folder with sources of a kernel, open, change on your own and start as the root
 
- 
- 
- 
-Как пользоваться
-Качаем нужный файл, кидаем в папку с исходниками ядра, открываем, меняем на своё и запускаем от имени рута
+Features:
 
-
-
-
-Особенности:
-
-+ С логом в терминал build_terminal_log.sh
-+ С логом в файл build_file_log.sh
++ With log to terminal build_terminal_log.sh
++ With log to build_file_log.sh
